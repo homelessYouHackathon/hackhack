@@ -1,4 +1,4 @@
-#🤳객체 및 텍스트 탐지 AI를 사용하여 SNS 상 개인정보 노출로 인한 피해 방지 웹사이트 SAVE, YOU
+# 🤳객체 및 텍스트 탐지 AI를 사용하여 SNS 상 개인정보 노출로 인한 피해 방지 웹사이트 SAVE, YOU
 
 ![image](https://github.com/homelessYouHackathon/hackhack/assets/125464850/6eda703b-1781-41f8-98b7-49a0089fe837)
 
@@ -6,26 +6,26 @@
 
 <br>
 
-##프로젝트 소개
+## 프로젝트 소개
 
--SAVE, YOU는 표지판의 글씨나, 건물의 외관 등을 살짝 변형함으로써 개인정보 노출로 인한 피해를 방지하는 웹사이트입니다.
--SNS에 단순히 올린 사진의 배경의 건물 특성, 표지판 정보 등에서 개인정보가 노출될 가능성이 있습니다. 이는 타인이 악용하여 추가적인 범죄를 일으킬 수 있다는 점에서 심각성이 크다고 생각하여 해당 프로젝트를 고안하게되었습니다.
--해당 웹사이트는 사용자가 이미지 처리 대상 항목을 선택하고, SNS에 올리려는 사진을 Click To Upload Image에 넣어주면 자동으로 민감한 정보를 삭제해줍니다.
+- SAVE, YOU는 표지판의 글씨나, 건물의 외관 등을 살짝 변형함으로써 개인정보 노출로 인한 피해를 방지하는 웹사이트입니다.
+- SNS에 단순히 올린 사진의 배경의 건물 특성, 표지판 정보 등에서 개인정보가 노출될 가능성이 있습니다. 이는 타인이 악용하여 추가적인 범죄를 일으킬 수 있다는 점에서 심각성이 크다고 생각하여 해당 프로젝트를 고안하게되었습니다.
+- 해당 웹사이트는 사용자가 이미지 처리 대상 항목을 선택하고, SNS에 올리려는 사진을 Click To Upload Image에 넣어주면 자동으로 민감한 정보를 삭제해줍니다.
 
 <br>
 
-##기술 스택
+## 기술 스택
 
 |   Django   |   HTML5   |   CSS    |  JavaScript   |
 | :--------: | :-------: | :------: | :-----------: |
 |   <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">    |  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">  |  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">  |    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">      |
 
-###개발환경
--**AI 모델**
+### 개발환경
+- **AI 모델**
   - 모델: YOLOv8
   - 라이브러리: OpenCV, Tesseract(OCR)
 
--**기타 도구**
+- **기타 도구**
   - 버전 관리: Git, GitHub
   - 통합 개발 환경 (IDE): Visual Studio Code
   - GPU: Google Colab
@@ -37,10 +37,10 @@
 ## 구현 기능
 
 ### 특수한 공간의 위치 탐지 방지
--YOLOv8 객체탐지를 통해 표지판과 건물을 탐지하고 Bounding Box 내의 이미지를 삭제하여 Inpainting으로 주변 배경으로 빈공간을 채워준다.
+- YOLOv8 객체탐지를 통해 표지판과 건물을 탐지하고 Bounding Box 내의 이미지를 삭제하여 Inpainting으로 주변 배경으로 빈공간을 채워준다.
 
 ### 민감한 정보 삭제
--주민번호, 전화번호, 도로명 등과 같이 개인정보가 포함된 숫자들을 Tesseract를 이용하여 탐지하여 Opencv로 삭제후 주변 배경색으로 덮어준다.
+- 주민번호, 전화번호, 도로명 등과 같이 개인정보가 포함된 숫자들을 Tesseract를 이용하여 탐지하여 Opencv로 삭제후 주변 배경색으로 덮어준다.
 
 ### SAVE, YOU 웹사이트
 1. 주소, 건물 등 같은 처리하고 싶은 항목을 선택한다.
@@ -48,7 +48,8 @@
 3. 민감한 정보를 삭제하여 처리한 이미지 결과가 Processed Image에 생성된다.
 
 <br>
-##프로젝트 구조
+
+## 프로젝트 구조
 
 ```
 ┣ README.md
@@ -116,13 +117,16 @@
    ┣ requirements.txt
    ┗ runtime.txt
 ```
+
 <br>
 
-##프로젝트 결과물
+## 프로젝트 결과물
 
 <div align="center">
   
-![건물 탐지 정확도](https://prod-files-secure.s3.us-west-2.amazonaws.com/42500546-fb3a-436e-a6e3-89de59270ee7/5793721d-2e24-4eb0-9487-305bae84aa9f/4c43bf7b-63fa-4701-9c29-1eb513aed5cd.png) | ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/42500546-fb3a-436e-a6e3-89de59270ee7/0974aaca-6b23-477f-96d4-c619064d6a88/Untitled.png)
+<img src="https://github.com/homelessYouHackathon/hackhack/assets/125464850/9107e034-d2f4-4da4-b87c-f900168a146d" height=150 width=150>
+<img src="https://github.com/homelessYouHackathon/hackhack/assets/125464850/9269e0e5-5645-4b07-9cf6-361eae44605d" height=150 width=150>
+
 건물 탐지 정확도 | 표지판 탐지 정확도
 
 ![image](https://github.com/homelessYouHackathon/hackhack/assets/125464850/d3cd2115-d4f2-4f4b-8b57-a6fc1eedaa66)
