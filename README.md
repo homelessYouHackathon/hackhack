@@ -18,18 +18,18 @@
 
 |   Django   |   HTML5   |   CSS    |  JavaScript   |
 | :--------: | :-------: | :------: | :-----------: |
-|   ![dj]    |  ![html]  |  ![css]  |    ![js]      |
+|   <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">    |  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">  |  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">  |    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">      |
 
 ###개발환경
 -**AI 모델**
-  -모델: YOLOv8
-  -라이브러리: OpenCV, Tesseract(OCR)
+  - 모델: YOLOv8
+  - 라이브러리: OpenCV, Tesseract(OCR)
 
 -**기타 도구**
-  -버전 관리: Git, GitHub
-  -통합 개발 환경 (IDE): Visual Studio Code
-  -GPU: Google Colab
-  -라벨링 도구 : LabelImg
+  - 버전 관리: Git, GitHub
+  - 통합 개발 환경 (IDE): Visual Studio Code
+  - GPU: Google Colab
+  - 라벨링 도구 : LabelImg
   - 협업 툴 : Notion, Github Wiki, Canva
   - 서비스 배포 환경 : Cloudtype
 <br>
@@ -37,10 +37,15 @@
 ## 구현 기능
 
 ### 특수한 공간의 위치 탐지 방지
-YOLOv8 객체탐지를 통해 표지판과 건물을 탐지하고 Bounding Box 내의 이미지를 삭제하여 Inpainting으로 주변 배경으로 빈공간을 채워준다.
+-YOLOv8 객체탐지를 통해 표지판과 건물을 탐지하고 Bounding Box 내의 이미지를 삭제하여 Inpainting으로 주변 배경으로 빈공간을 채워준다.
 
 ### 민감한 정보 삭제
-주민번호, 전화번호, 도로명 등과 같이 개인정보가 포함된 숫자들을 Tesseract를 이용하여 탐지하여 Opencv로 삭제후 주변 배경색으로 덮어준다.
+-주민번호, 전화번호, 도로명 등과 같이 개인정보가 포함된 숫자들을 Tesseract를 이용하여 탐지하여 Opencv로 삭제후 주변 배경색으로 덮어준다.
+
+### SAVE, YOU 웹사이트
+1. 주소, 건물 등 같은 처리하고 싶은 항목을 선택한다.
+2. SNS에 올리려는 사진을 Click To Upload Image에 사진을 드래그드랍하고 Upload버튼을 누른다.
+3. 민감한 정보를 삭제하여 처리한 이미지 결과가 Processed Image에 생성된다.
 
 <br>
 ##프로젝트 구조
@@ -113,6 +118,20 @@ YOLOv8 객체탐지를 통해 표지판과 건물을 탐지하고 Bounding Box �
 ```
 <br>
 
+##프로젝트 결과물
+
+<div align="center">
+  
+![건물 탐지 정확도](https://prod-files-secure.s3.us-west-2.amazonaws.com/42500546-fb3a-436e-a6e3-89de59270ee7/5793721d-2e24-4eb0-9487-305bae84aa9f/4c43bf7b-63fa-4701-9c29-1eb513aed5cd.png) | ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/42500546-fb3a-436e-a6e3-89de59270ee7/0974aaca-6b23-477f-96d4-c619064d6a88/Untitled.png)
+건물 탐지 정확도 | 표지판 탐지 정확도
+
+![image](https://github.com/homelessYouHackathon/hackhack/assets/125464850/d3cd2115-d4f2-4f4b-8b57-a6fc1eedaa66)
+웹 사이트 시현 결과
+
+</div>
+
+<br>
+
 ## 팀원 구성
 
 <div align="center">
@@ -125,7 +144,6 @@ YOLOv8 객체탐지를 통해 표지판과 건물을 탐지하고 Bounding Box �
 
 <br>
 
-[dj]: /images/stack/django.svg
-[html]: /images/stack/html5.svg
-[css]: /images/stack/css.svg
-[js]: /images/stack/javascript.svg
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
